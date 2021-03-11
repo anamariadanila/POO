@@ -170,7 +170,8 @@ int Sort::GetElementsCount()
 
 int Sort::GetElementFromIndex(int index)
 {
-	if (index < 0 && index > this->numberOfElementsList) {
+
+	if (index < 0 || index > this->numberOfElementsList) {
 		return -1;
 	}
 	return this->list[index];
