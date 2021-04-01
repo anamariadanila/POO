@@ -1,16 +1,16 @@
 #pragma once
 #include<iostream>
 using namespace std;
-#define DOUBLE_SIZE\
-	if( newLength+1 >= currentLenght)\
-	{\
-		int size = currentLenght * 2; \
-		T* temp = new T[size]; \
-		memcpy(temp, arrayObj, currentLenght * sizeof(T)); \
-		currentLenght = size; \
-		delete[] arrayObj; \
-		arrayObj = temp;\
-	}
+//#define DOUBLE_SIZE\
+//	if( newLength+1 >= currentLenght)\
+//	{\
+//		int size = currentLenght * 2; \
+//		T* temp = new T[size]; \
+//		memcpy(temp, arrayObj, currentLenght * sizeof(T)); \
+//		currentLenght = size; \
+//		delete[] arrayObj; \
+//		arrayObj = temp;\
+//	}
 template <class T>
 class Vector {
 
